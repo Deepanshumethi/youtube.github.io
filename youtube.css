@@ -1,0 +1,269 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    /* border: 1px solid red; */
+    /* background-color:#0f0f0f ; */
+    font-family: roboto;
+}
+body{
+    background-color: #0f0f0f;
+}
+.menu{
+    
+    padding-top: 13px;
+    padding-bottom: 10px;
+    /* font-weight: lighter; */
+    padding-left: 23%;
+    /* border:2px solid red; */
+}
+.menu a {
+    color:white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.nav{
+   
+    height: 100%;
+    width: 5.5%;
+    background-color: #0f0f0f;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    
+}
+h4{
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+div ul li {
+    /* background-color: white; */
+   
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    /* padding-bottom: 20px; */
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+ul li a h4{
+    font-size: 10px;
+}
+
+
+.nav ul :hover{
+    background-color: gray;
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    height:70px;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction:row;
+    position:inherit;
+}
+.logo{
+    display: flex;
+    flex-direction:row;
+}
+.logo i{
+    padding: 10px 5px;
+    color: red;
+    font-size: 30px;
+}
+.logo h2{
+    color: white;
+    padding: 10px 0px;
+}
+.search{
+    padding: 10px 20px 10px 11%;
+    display: flex;
+    flex-direction:row;
+}
+input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right:100%;
+    padding-left: 5%;
+    background-color: #121212;
+    color: white;
+    border-color: white;
+    margin-left: -10%;
+}
+
+input::placeholder{
+    color: grey;
+}
+.search_button{
+    color: white;
+    background-color: #272727;
+    padding: 15px 25px;
+}
+.search_button:hover{
+    border: 1px solid white;
+}
+.mike{
+    color: white;
+    background-color: #272727;
+    padding: 15px 20px;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+.mike:hover{
+    cursor: pointer;
+}
+.side{
+    display: flex;
+    flex-direction:row;
+    padding-left: 0px;
+   /* float: right; */
+   margin-left: 30%;
+}
+.create{
+    color: white;
+    padding: 25px 15px 20px 40%;
+    font-size: 20px;
+}
+.create,.bell,.profile_image:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.bell{
+    color: white;
+    padding: 25px 15px 20px 20px;
+    font-size: 20px;
+}
+.profile_image img{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+@media screen and (max-width:1100px){
+    input{
+        padding-right: 60%;
+    }
+    .side{
+        margin-left: 20%;
+    }
+    .cards{
+        padding-left: 35px;
+    }
+}
+@media  screen and (max-width:900px){
+
+        input{
+            padding-right: 10%;
+        }
+        .side{
+            margin-left: 1%;
+        }
+        .cards{
+            padding-left: 35px;
+        }
+        .nav ul :hover{
+            background-color: #0f0f0f;
+            cursor: pointer;
+        }
+    
+}
+@media screen and (max-width:700px){
+    input{
+        padding-right: 0%;
+    }
+    .mike{
+        display: none;
+    }
+    .side{
+        margin-left: -10%;
+    }
+    .cards{
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width:600px){
+    header{
+       width: -50%;
+    }
+    input{
+        display: none;
+    }
+    .search{  
+        margin-left: -6%; 
+    }
+    .search_button{
+        padding: 15px 10px;
+        border-radius: 10px;
+    }
+    .side{
+       margin-left: 0%;
+    }
+    header{
+        margin-left: 6%;
+        /* background-color: antiquewhite; */
+        width: 100%;
+    }
+    .menu a{
+        padding-left: 40%;
+    }
+    .cards{
+        padding-left: 70px;
+    }
+   
+}
+@media screen and (max-width:400px){
+    .search{  
+        margin-left: 0%; 
+    }
+    .side{
+        margin-left: -17%;
+     }
+     .cards{
+        padding-left: 35px;
+    }
+}
+
+
+.youtube{
+    height: 100%;
+    background-color: #0f0f0f;
+    width: 100%;
+    padding-bottom: 20px;
+    /* border: 1px solid red; */
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:2%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    /* border: 1px solid green; */
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellow; */
+    height: 240px;
+    width: 250px;
+    margin-left: 30px;
+}
+.cards div img{
+    height: 80%;
+    width: 10%;
+    border-radius: 100px;
+    margin-left: -2px;
+}
+h5{
+    color: rgb(255, 255, 255);
+    margin-left: 5%;
+}
+
+
+
